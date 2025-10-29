@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Shopping Dog</title>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f1f2f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.cart {
+  background: #00b894;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card {
+  background: white;
+  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 10px 0;
+  color: #2d3436;
+}
+
+.price {
+  font-size: 20px;
+  color: #0984e3;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #00b894;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #55efc4;
+}
+</style>
+</head>
+<body>
+
+<div class="cart">
+  🛒 Cart: <span id="cartCount">0</span>
+</div>
+
+<div class="card">
+  <img src="shop.jpg" alt="Product Image">
+  <h2>Beautiful Dog</h2>
+  <p class="price">45.00 Birr</p>
+  <p>Our dogs are so beautiful and amazing.</p>
+  <button id="addToCartBtn">Add to Cart</button>
+</div>
+
+<script>
+let cartCount = 0;
+
+document.getElementById('addToCartBtn').addEventListener('click', function() {
+  cartCount++;
+  document.getElementById('cartCount').textContent = cartCount;
+});
+</script>
+
+</body>
+</html>
