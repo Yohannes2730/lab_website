@@ -1,48 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styl.css"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #0ea5e9, #6366f1, #d946ef);
+        color: white;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid rgba(255,255,255,0.7);
+    }
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .sidebar a:hover {
+        color: #ffeb3b;
+    }
+
+    .contact-section a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contact-section a:hover {
+        color: #ffeb3b;
+    }
+</style>
 </head>
 <body>
-    <header>
-       <img src="pj.jpg" alt="">      
-          <div>
-            <h1>Yohannes Girma</h1>
-            <p>ID: 0850/16</p>
+<header class="bg-dark bg-opacity-25 border-bottom border-light p-4">
+    <div class="container d-flex align-items-center gap-3">
+        <img src="pj.jpg" class="profile-img" alt="Profile">
+        <div>
+            <h1 class="fs-3 m-0">Yohannes Girma</h1>
+            <p class="fs-5 m-0 opacity-75">ID: 0850/16</p>
         </div>
-    </header>
-    <div class="container">
-        <section class="profile">
-            <h2>lab practical</h2>
-            <p></p>
-        </section>
-        <section>
-            <h2>Lab Practices & Assignments</h2>
-            <ul class="labs">
-                <li><a href="table.html">Lab 1</a></li>
-                <li><a href="span.html">Lab 2</a></li>
-                <li><a href="lab3.html">Lab 3</a></li>
-                <li><a href="Assi1.html">Assignment 1</a></li>
-                <li><a href="Assi2.html">Assignment 2</a></li>
-                <li><a href="Assi3.html">Assignment 3</a></li>
-                <li><a href="ToDo_list.html">Practices 1</a></li>
-                <li><a href="onlineshop.html">Practices 2</a></li>
-                <li><a href="attendance.html">Practices 3</a></li>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <aside class="col-md-3 col-lg-2 sidebar p-4 bg-dark bg-opacity-25 border-end border-light">
+            <h4 class="text-center pb-2 border-bottom border-light">Projects & Labs</h4>
+
+            <ul class="nav flex-column mt-3 fs-5">
+                <li class="nav-item"><a class="nav-link py-2" href="table.html">Lab 1</a></li>
+                <li class="nav-item"><a class="nav-link py-2" href="span.html">Lab 2</a></li>
+                <li class="nav-item"><a class="nav-link py-2" href="lab3.html">Lab 3</a></li>
+                <li class="nav-item"><a class="nav-link py-2" href="Assi1.html">Assignment 1</a></li>
+                <li class="nav-item"><a class="nav-link py-2" href="Assi2.html">Assignment 2</a></li>
+                <li class="nav-item"><a class="nav-link py-2" href="Assi3.html">Assignment 3</a></li>
+                <li class="nav-item"><a class="nav-link py-2" href="ToDo_list.html">Practice 1</a></li>
+                <li class="nav-item"><a class="nav-link py-2" href="onlineshop.html">Practice 2</a></li>
+                <li class="nav-item"><a class="nav-link py-2" href="attendance.html">Practice 3</a></li>
+                <li class="nav-item"><a class="nav-link py-2" href="boot/index.html">boot practice</a></li>
             </ul>
-        </section>
-        <section class="contact">
-            <h2>Contact</h2>
-                <p>Email: <a href="mailto:yohannesg218@gmail.com">yohannesg218@gmail.com</a></p>
-                <p>GitHub: <a href="https://github.com/Yohannes2730" target="_blank">Yohannes2730</a></p>
-</section>
+        </aside>
+
+
+        <main class="col-md-9 col-lg-10 p-4 bg-dark bg-opacity-25">
+            <h2 class="pb-2 border-bottom border-light">About Me</h2>
+            <p class="fs-5 mt-3">
+                I am Yohannes Girma, passionate about learning 
+                web development, backend technologies, and building practical projects.
+                This portfolio contains my every day lab practice and assignments 
+                done throughout this semester.
+            </p>
+        </main>
 
     </div>
+</div>
 
-    <footer>
-        <p>&copy; 2025 lab practical</p>
-    </footer>
+
+
+<section class="contact-section text-center py-4 bg-dark bg-opacity-50 border-top border-light mt-4">
+    <h3 class="text-decoration-underline">Contact</h3>
+    <p class="fs-5 mt-2">Email:
+        <a href="mailto:yohannesg218@gmail.com">yohannesg218@gmail.com</a>
+    </p>
+    <p class="fs-5">GitHub:
+        <a href="https://github.com/Yohannes2730" target="_blank">Yohannes2730</a>
+    </p>
+</section>
+
+
+
+<footer class="text-center py-3 border-top border-light">
+    <p class="opacity-75 m-0">2025 Lab Practical</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
